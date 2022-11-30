@@ -5,5 +5,5 @@ int fact(int f) {
   if (f <= 0) {
     return 0;
   }
-  return fact(f) * fact(f - 1);
+  return f * fact(f - 1);
 }
