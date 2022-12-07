@@ -3,7 +3,7 @@ import 'dart:convert';
 
 printBbCharacters() async {
   try {
-    final res = await http.get(Uri.parse('https://www.breakingbadapi.com/api/characters'),
+    final res = await http.get(Uri.parse('https://rickandmortyapi.com/api/character'),
     );
     var json = jsonDecode(res.body);
 
