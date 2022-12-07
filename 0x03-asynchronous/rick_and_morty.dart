@@ -6,8 +6,7 @@ printRmCharacters() async {
     final res = await http.get(Uri.parse('https://rickandmortyapi.com/api/character'),
     );
     var json = jsonDecode(res.body);
-
-    for (var idx = 0; idx < json.length; idx++) {
+    for (var idx = 0; idx < json['results'].length; idx++) {
       print("${json['results'][idx]['name']}");
     }
   } catch (err) {
